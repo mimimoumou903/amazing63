@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>店家口述 — 簡易介紹網頁</title>
+  <style>
+  /* 神獸元素：龍、鳳、獅 */
+  .beast-dragon {
+    background:url('dragon-gold.png') no-repeat top right;
+    background-size:180px;
+  }
+  .beast-phoenix {
+    background:url('phoenix-gold.png') no-repeat top left;
+    background-size:160px;
+  }
+  .beast-lion {
+    background:url('lion-guardian.png') no-repeat bottom right;
+    background-size:150px;
+  }
+
+  /* 宮廟捲雲紋框線 */
+  .cloud-frame {
+    border:12px solid transparent;
+    border-image:url('cloud-border.png') 30 round;
+    padding:25px;
+    margin:20px 0;
+    background:white;
+  }
+    :root{--bg:#fff;--card:#fff;--muted:#666;--accent:#b85c2a}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,"Segoe UI","Helvetica Neue",PingFang TC,"Noto Sans TC",Arial;line-height:1.6;color:#222;background:linear-gradient(180deg,#fff,#f7f5f3);padding:20px}
+    .wrapper{max-width:980px;margin:0 auto}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:84px;height:84px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#f4b183);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px}
+    h1{margin:0;font-size:24px}
+    p.lead{color:var(--muted);margin-top:6px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06);margin-top:18px}
+    .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr}}
+    .quote{font-style:italic;border-left:4px solid var(--accent);padding:12px 16px;background:#fffefc;border-radius:8px}
+    .transcript{font-family:Menlo, Monaco, monospace;font-size:13px;white-space:pre-wrap;max-height:360px;overflow:auto;padding:12px;background:#fbfbfb;border-radius:8px;border:1px solid #eee}
+    details{margin-top:10px}
+    .section-title{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;background:var(--accent);color:#fff}
+    footer{margin-top:24px;color:var(--muted);font-size:13px;text-align:center}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{background:#fff;border:1px solid #eee;padding:6px 8px;border-radius:999px;font-size:13px}
+  </style>
+<style>
+  body {
+    background:#fdf6e3 url('peony-pattern.png') repeat; 
+    font-family:'DFKai-SB','KaiTi','BiauKai',serif;
+  }
+  .temple-frame {
+    border:10px solid gold;
+    border-radius:20px;
+    padding:20px;
+    background:white;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+  }
+  .temple-photo {
+    border:8px solid gold;
+    border-radius:16px;
+    padding:6px;
+    background:#8b0000;
+  }
+  .lantern-sidebar {
+    position:fixed;
+    top:0;
+    left:0;
+    width:90px;
+    height:100vh;
+    background:url('lantern.png') repeat-y center;
+    background-size:70px;
+  }
+  .main-signboard {
+    text-align:center;
+    margin:20px auto;
+    padding:20px 40px;
+    background:#8b0000;
+    border:8px solid gold;
+    border-radius:12px;
+  }
+  .main-signboard h2 {
+    font-size:2.4rem;
+    color:#ffd700;
+    text-shadow:3px 3px 0 #5c0000;
+    letter-spacing:3px;
+  }
+</style>
+</head>
+<body>
+<div class="lantern-sidebar"></div>
+<div class="main-signboard"><h2>大豐原福州包-店家介紹</h2><div style="margin-top: 18px; font-size: 18px; color: #ffebad; lettwr-spacing:3px;"><br>
+｜傳承三十年在地風味，慈濟宮廟埕旁的老味道｜</div>
+</div>
+  <div class="section">
+    <div class="card">
+		<h2>店家特色</h2>
+      <p>福州包以「煎一面、不油膩、皮薄」為特色，與一般水煎包不同。許多在地人與香客都喜歡回訪支持，是豐原慈濟宮周邊的老字號小吃店。</p>
+    </div>
+
+    <div class="card">
+      <h2>與廟宇文化的連結</h2>
+      <ul>
+        <li>媽祖生日、香客參拜期間人潮會帶動生意。</li>
+        <li>曾見證兩次「建醮」盛況（20 年一次的大型祭典）。</li>
+        <li>萬聖節商圈活動成功，店家會提供糖果給小朋友。</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>老闆的小故事</h2>
+      <p>老闆原本在台中市學做福州包，之後因豐原當時商圈熱鬧而選擇在此落腳。一賣就是 30 年，雖然經歷 921 地震後人潮減少、商圈轉型，但依然堅持做下去，陪伴許多在地居民成長。</p>
+    </div>
+
+    <div class="card">
+      <h2>周邊文化與活動</h2>
+      <ul>
+        <li>豐原慈濟宮的繞境、媽祖生日等傳統活動。</li>
+        <li>年度糕餅節帶來人潮，是豐原的特色節慶。</li>
+        <li>商圈萬聖節活動由市府與民間團體合作舉辦。</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h2>聯絡資訊</h2>
+      <p>地址：臺中市豐原區信義街92號</p>
+      <p>營業時間：<br>星期日 11:15–22:00<br>星期一 14:15–22:00<br>星期二 14:15–22:00<br>星期三 14:15–22:00<br>星期四 14:15–22:00<br>星期五 14:15–22:00<br>星期六 11:15–22:00</p>
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d367.7108914691227!2d120.7227809!3d24.2486719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34693dd5116b7e6b%3A0x260d85ee5115e1ef!2zNDA05Y-w5Lit5biC5b6p5bGx5Y2A5L-h5YyX6KGXOTLomZ8!5e0!3m2!1szh-TW!2stw!4v1700000000000!5m2!1szh-TW!2stw" width="100%" height="300" style="border:0; border-radius: 12px; margin-top: 12px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </div>
+</body>
+</html>
+
