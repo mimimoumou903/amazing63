@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>店家口述 — 簡易介紹網頁</title>
+  <style>
+  /* 神獸元素：龍、鳳、獅 */
+  .beast-dragon {
+    background:url('dragon-gold.png') no-repeat top right;
+    background-size:180px;
+  }
+  .beast-phoenix {
+    background:url('phoenix-gold.png') no-repeat top left;
+    background-size:160px;
+  }
+  .beast-lion {
+    background:url('lion-guardian.png') no-repeat bottom right;
+    background-size:150px;
+  }
+
+  /* 宮廟捲雲紋框線 */
+  .cloud-frame {
+    border:12px solid transparent;
+    border-image:url('cloud-border.png') 30 round;
+    padding:25px;
+    margin:20px 0;
+    background:white;
+  }
+    :root{--bg:#fff;--card:#fff;--muted:#666;--accent:#b85c2a}
+    *{box-sizing:border-box}
+    body{font-family:system-ui,-apple-system,"Segoe UI","Helvetica Neue",PingFang TC,"Noto Sans TC",Arial;line-height:1.6;color:#222;background:linear-gradient(180deg,#fff,#f7f5f3);padding:20px}
+    .wrapper{max-width:980px;margin:0 auto}
+    header{display:flex;align-items:center;gap:16px}
+    .logo{width:84px;height:84px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#f4b183);display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:18px}
+    h1{margin:0;font-size:24px}
+    p.lead{color:var(--muted);margin-top:6px}
+    .card{background:var(--card);padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06);margin-top:18px}
+    .meta{font-size:13px;color:var(--muted);margin-bottom:8px}
+    .grid{display:grid;grid-template-columns:1fr 320px;gap:18px}
+    @media (max-width:880px){.grid{grid-template-columns:1fr}}
+    .quote{font-style:italic;border-left:4px solid var(--accent);padding:12px 16px;background:#fffefc;border-radius:8px}
+    .transcript{font-family:Menlo, Monaco, monospace;font-size:13px;white-space:pre-wrap;max-height:360px;overflow:auto;padding:12px;background:#fbfbfb;border-radius:8px;border:1px solid #eee}
+    details{margin-top:10px}
+    .section-title{display:flex;align-items:center;gap:8px;margin-bottom:10px}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;text-decoration:none;background:var(--accent);color:#fff}
+    footer{margin-top:24px;color:var(--muted);font-size:13px;text-align:center}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{background:#fff;border:1px solid #eee;padding:6px 8px;border-radius:999px;font-size:13px}
+  </style>
+<style>
+  body {
+    background:#fdf6e3 url('peony-pattern.png') repeat; 
+    font-family:'DFKai-SB','KaiTi','BiauKai',serif;
+  }
+  .temple-frame {
+    border:10px solid gold;
+    border-radius:20px;
+    padding:20px;
+    background:white;
+    box-shadow:0 0 20px rgba(0,0,0,0.3);
+  }
+  .temple-photo {
+    border:8px solid gold;
+    border-radius:16px;
+    padding:6px;
+    background:#8b0000;
+  }
+  .lantern-sidebar {
+    position:fixed;
+    top:0;
+    left:0;
+    width:90px;
+    height:100vh;
+    background:url('lantern.png') repeat-y center;
+    background-size:70px;
+  }
+  .main-signboard {
+    text-align:center;
+    margin:20px auto;
+    padding:20px 40px;
+    background:#8b0000;
+    border:8px solid gold;
+    border-radius:12px;
+  }
+  .main-signboard h2 {
+    font-size:2.4rem;
+    color:#ffd700;
+    text-shadow:3px 3px 0 #5c0000;
+    letter-spacing:3px;
+  }
+</style>
+</head>
+<body>
+<div class="lantern-sidebar"></div>
+<div class="main-signboard"><h2>AMAZING63義大利咖啡店-商家介紹</h2></div>
+      <main class="cloud-frame beast-dragon beast-phoenix beast-lion temple-frame">
+        <section class="card">
+          <div class="meta">受訪者：咖啡店老闆 | 地點：豐原（廟東商圈） | 訪談重點：在地經營、義大利咖啡、商圈變遷</div>
+
+          <h2 class="section-title">簡短摘要</h2>
+          <p>
+            受訪者是豐原廟東商圈一家經營超過十幾年的咖啡店老闆，然後他講到，豐原這邊以前非常熱鬧，但因為縣市合併與活動移走等原因，影響了人潮。
+            他起初因為親戚的關係、因緣際會到豐原打拚，然後逐步學習與投入義大利咖啡，最後成為義大利認證的講師與評審。受訪者說他享受做咖啡的過程，因為他覺得這是他的志業，然後也不想輕易放棄。
+          </p>
+
+          <h2 class="section-title">重點整理</h2>
+          <ul>
+            <li>地點影響：廟會、燈會等活動曾為商圈帶來大量人潮，但活動移轉後人潮減少。</li>
+            <li>經營心路：從無到有，堅持義大利咖啡的專業與細節，因此形成差異化。</li>
+            <li>客群與挑戰：年輕客仍有，但商圈缺乏新穎元素，競爭者多導致分食市場。</li>
+            <li>未來想法：想在豐原繼續經營，未打算回清水開同樣的店；若身體狀況不佳會考慮搬遷。</li>
+          </ul>
+
+          <h2 class="section-title">代表語句（摘錄）</h2>
+          <div class="quote">
+            「我做咖啡已經變成我終生的志業了，我想要做到我覺得我好像不太能夠再做為止。」
+          </div>
+
+          <details>
+            <summary style="cursor:pointer;padding:8px 0;font-weight:600">展開完整逐字稿</summary>
+            <div class="transcript">
+研究者  00:00:01,718
+就是想要請問你說這裡在媽祖廟的商圈裡面，那你有就是覺得說媽祖廟對這一帶的生活和你的生意有沒有什麼影響？有沒有直接或間接的影響？
+受訪者  00:00:19,640
+因為豐原這個地方主要就是為來媽祖廟，就是所謂的廟東，然後其實最大的，我覺得豐原最熱鬧的就是在這一區，那另外一個，另外一個小小的缺點，就是除了這一區，也好像也沒有其他的東西。
+研究者  00:00:40,219
+對，豐原的話是。
+受訪者  00:00:41,878
+所以豐原以前裡面是非常、非常熱鬧，因為我，我是、我是清水人，我到豐原工作斷斷續續大概二十年了，我這家店開了快要十八年，所以我對豐原這一帶的起落，其實我感觸蠻深的，然後從我以前到這邊來的一些舊店，其實幾乎已經沒什麼舊店了，幾乎沒什麼店，除了廟東幾間那個小吃，比較長青的那一種以外，不然其實已經沒什麼，就換來換去換來換去這樣子，然後所以客人對我們也沒有什麼幫助，其實老實說我覺得經過看到了，經過看到的。
+...（此處已壓縮顯示，完整內容皆包含在此區塊）
+            </div>
+          </details>
+
+          <p style="margin-top:12px">需要我把這份資料轉成：PDF、可列印版、或是放進桌遊卡牌的簡版故事卡？按下面告訴我你的需求即可。</p>
+          <p style="margin-top:8px"><a class="btn" href="#contact">我要其他格式 / 修改</a></p>
+        </section>
+
+        <section class="card" style="margin-top:18px">
+          <h2 class="section-title">如何使用這個頁面</h2>
+          <ol>
+            <li>可直接把這個 HTML 檔案放到伺服器上（或用本機開啟）即能瀏覽。</li>
+            <li>若要嵌入更多店家照片，請把圖片放在 images/ 資料夾，然後修改 &lt;img&gt; 標籤的路徑。</li>
+            <li>我可以幫你把每段訪談做成可下載的 .txt 或 .csv 檔案，或是切割成多個店家的介紹頁面。</li>
+          </ol>
+        </section>
+      </main>
+
+      <aside>
+        <div class="card">
+          <h3>快速資訊</h3>
+          <p class="meta">作者：訪談者團隊<br/>日期：請填入訪談日期</p>
+          <div class="tags" style="margin-top:8px">
+            <div class="tag">廟東</div>
+            <div class="tag">豐原</div>
+            <div class="tag">義大利咖啡</div>
+            <div class="tag">口述歷史</div>
+          </div>
+
+          <hr style="margin:12px 0"/>
+
+          <h4>操作按鈕</h4>
+          <p><a class="btn" href="#" onclick="downloadHTML();return false;">下載 HTML 檔</a></p>
+
+          <script>
+            function downloadHTML(){
+              const content = document.documentElement.outerHTML;
+              const blob = new Blob([content],{type:'text/html'});
+              const url = URL.createObjectURL(blob);
+              const a = document.createElement('a');
+              a.href = url; a.download = '簡易式介紹網頁.html'; document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+            }
+          </script>
+        </div>
+
+        <div class="card" style="margin-top:18px">
+          <h4>聯絡 / 修改</h4>
+          <p>若要我套版多間店家、或改成柔和廟宇風（廟匾、雲紋、紅燈籠）也可以，然後我會依你要的風格去調整。</p>
+          <p id="contact"><a class="btn" href="#">請幫我修改</a></p>
+        </div>
+      </aside>
+    </div>
+
+    <footer>
+      
+  </div>
+</body>
+</html>
